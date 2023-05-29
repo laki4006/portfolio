@@ -9,57 +9,53 @@ $breakpoint-sm: 768px;
 $breakpoint-md: 992px;
 $breakpoint-lg: 1200px;
 
-
-
 @font-face {
-    font-family: "Redhat";
-    src: url(../assets/fonts/RedHat/RedHatDisplay-Regular.ttf);
+  font-family: "Redhat";
+  src: url(../assets/fonts/RedHat/RedHatDisplay-Regular.ttf);
 }
 
 @font-face {
-    font-family: "Dosis";
-    src: url("../assets/fonts/Dosis/Dosis-Regular.ttf");
+  font-family: "Dosis";
+  src: url("../assets/fonts/Dosis/Dosis-Regular.ttf");
 }
 
 * {
-    font-family: "Redhat";
-    margin: 0px;
-    padding: 0px;
-    color: $text-color;
+  font-family: "Redhat";
+  margin: 0px;
+  padding: 0px;
+  color: $text-color;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-
 header {
-    font-size: $font-size-header;
-    padding: 10px 0px 10px 0px;
-    background-color: $primary-color;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  font-size: $font-size-header;
+  padding: 10px 0px 10px 0px;
+  background-color: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
-
 
 @keyframes slideInLeft {
   from {
-      transform: translateX(-200px);
+    transform: translateX(-200px);
   }
-  
+
   to {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
 .logo {
-    display: flex;
-    align-self: center;
-    transition: 0.2s;
-    cursor: pointer;
-    animation-name: slideInLeft;
-    animation-duration: 1.5s;
+  display: flex;
+  align-self: center;
+  transition: 0.2s;
+  cursor: pointer;
+  animation-name: slideInLeft;
+  animation-duration: 1.5s;
 }
 
 .logo:hover {
@@ -68,11 +64,11 @@ header {
 
 @keyframes slideInRight {
   from {
-      transform: translateX(+200px);
+    transform: translateX(+200px);
   }
-  
+
   to {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -82,14 +78,14 @@ nav {
 }
 
 nav ul {
-    padding: 5px;
-    background-color: rgba($color: #000000, $alpha: 0.2);
-    display: flex;
-    list-style: none;
+  padding: 5px;
+  background-color: rgba($color: #000000, $alpha: 0.2);
+  display: flex;
+  list-style: none;
 }
 
 nav ul li {
-    padding: 0px 10px 0px 10px;
+  padding: 0px 10px 0px 10px;
 }
 
 nav ul li a {
@@ -110,18 +106,18 @@ nav ul li a:before {
 }
 
 nav ul li a:hover:before {
-  width: 100%; 
+  width: 100%;
 }
 
 nav ul li a:hover {
-  border-bottom: none; 
+  border-bottom: none;
 }
 
 a {
-    display: block;
-    text-transform: uppercase;
-    font-family: "Dosis";
-    text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  font-family: "Dosis";
+  text-decoration: none;
 }
 
 @keyframes fadeIn {
@@ -133,9 +129,9 @@ a {
   }
 }
 
-
 #welcome {
-  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url(../assets/images/background1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)),
+    url(../assets/images/background1.jpg);
   background-size: stretch;
   background-position: center;
   background-blend-mode: multiply;
@@ -159,7 +155,6 @@ a {
 
 .welcometext p {
   font-size: 25px;
-  
 }
 
 #linija1 {
@@ -181,16 +176,14 @@ a {
 }
 
 .content1 img {
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
 
-
-.navtop, .navbot {
+.navtop,
+.navbot {
   display: flex;
   justify-content: center;
 }
-
-
 
 #about {
   background-color: $primary-color;
@@ -200,14 +193,12 @@ a {
   padding: 30px 10%;
 }
 
-.sectiontitle  {
+.sectiontitle {
   font-weight: 100;
   padding: 10px 0px 20px 0px;
   text-align: center;
   font-size: 50px;
 }
-
-
 
 #author {
   width: 100%;
@@ -227,12 +218,11 @@ a {
   margin: 0px 5px 0px 5px;
   width: 100%;
   height: auto;
-  background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.1));
-  display:flex;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1));
+  display: flex;
   align-items: center;
   flex-direction: column;
   padding: 4%;
-  
 }
 
 .aboutxt p {
@@ -247,7 +237,6 @@ a {
   color: $secondary-color;
 }
 
-
 .gradient-border {
   border-width: 5px;
   border-style: solid;
@@ -255,13 +244,14 @@ a {
 }
 
 #skills {
-  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url(../assets/images/background2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)),
+    url(../assets/images/background2.jpg);
   padding: 0px 10% 30px 10%;
 }
 
 .skills {
   width: 100%;
-  max-width:600px;
+  max-width: 600px;
   padding: 0px 20px;
 }
 
@@ -324,7 +314,6 @@ a {
   width: 80%;
 }
 
-
 #services {
   background-color: $primary-color;
   width: 100%;
@@ -336,35 +325,29 @@ a {
   margin-bottom: 30px;
 }
 
-
 #services .textboxes {
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 0px;
 }
+
 
 #services .textboxes .aboutxt {
   box-shadow: 2px 4px 6px 0px black;
   padding: 30px 15px 15px 15px;
 }
 
-
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 12px;
   background-color: black;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: $secondary-color;
 }
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
   background: rgb(0, 102, 34);
-}
-
-
-#services .textboxes {
-  display: flex;
-  justify-content: center;
 }
 
 #services .aboutxt {
@@ -372,7 +355,6 @@ a {
   border: 0px;
   width: 200px;
 }
-
 
 #projects {
   background-color: $primary-color;
@@ -384,7 +366,7 @@ a {
   margin: 10px 10px;
   height: 208px;
   width: 306px;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #projtable {
@@ -393,7 +375,6 @@ a {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
 
 .text-overlay {
   position: absolute;
@@ -422,11 +403,12 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit:fill;
+  object-fit: fill;
 }
 
 #contact {
-  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)), url(../assets/images/contact.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)),
+    url(../assets/images/contact.jpg);
   height: 700px;
 }
 
@@ -435,38 +417,36 @@ a {
   justify-content: space-evenly;
 }
 
-
 form {
-	text-align: center;
-	color: white;
-	padding: 10px;
-	
+  text-align: center;
+  color: white;
+  padding: 10px;
 }
 
 input {
   background-color: $primary-color;
-	width: 100%;
-	height: 30px;
+  width: 100%;
+  height: 30px;
 }
 
 #poruka form p {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
 textarea {
   background-color: $primary-color;
-	padding: 10px;
-	resize: none;
+  padding: 10px;
+  resize: none;
 }
 
 #submit {
-	padding-top: 10px;
+  padding-top: 10px;
 }
 
 #msg {
   background-color: $primary-color;
   color: $secondary-color;
-	font-size: 20px;
+  font-size: 20px;
 }
 
 .ctc {
@@ -501,6 +481,8 @@ footer {
 }
 
 footer a {
+  display: flex;
+  justify-content: center;
   transition: 0.3s;
 }
 
@@ -508,25 +490,28 @@ footer a:hover {
   color: rgb(105, 55, 55);
 }
 
+#footerleft,
+#footerright,
+#footercenter {
+  display: flex;
+  flex-direction: column;
+}
+
 /* MIXINS - - - - - - - - - - MIXINS - - - - - - - - - - - - - - MIXINS */
 
-
 @mixin mobiles {
-
-
   .sectiontitle {
     font-size: 30px;
     padding-top: 0px;
   }
-
-
 
   nav ul {
     background-color: transparent;
     padding: 0px;
   }
 
-  .logo, nav {
+  .logo,
+  nav {
     animation-name: none;
   }
 
@@ -538,29 +523,24 @@ footer a:hover {
     text-align: center;
   }
 
-  
-
   nav ul {
     align-items: center;
     text-align: center;
     flex-direction: column;
   }
 
-
   nav ul li {
     margin: 0px 10px 0px 10px;
     margin-bottom: 10px;
     border: 1px solid whitesmoke;
-  
   }
-
 
   nav ul li:hover {
     background-color: rgba($color: #ffffff, $alpha: 0.1);
   }
 
   nav ul li a:hover:before {
-    width: 0%; 
+    width: 0%;
   }
 
   header .logocentering {
@@ -571,46 +551,37 @@ footer a:hover {
   .text-overlay {
     opacity: 1;
   }
+}
 
+@mixin content {
+  .welcometext {
+    margin-bottom: 50px;
+    align-self: center;
+    align-items: center;
   }
 
-  @mixin content {
-    
-    .welcometext {
-      margin-bottom: 50px;
-      align-self: center;
-      align-items: center;
-    }
-    
-    #linija1 {
-      flex-direction: column;
-    }
-    
-   
+  #linija1 {
+    flex-direction: column;
+  }
+}
+
+@mixin about {
+  #textboxes {
+    flex-direction: column;
+    align-items: center;
   }
 
-
-  @mixin about {
-    #textboxes {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .aboutxt {
-      text-align: center;
-      margin-bottom: 30px;
-      width: 60%;
-      padding-top: 50px;
-    }
+  .aboutxt {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 60%;
+    padding-top: 50px;
   }
+}
 
+/* - - - - - - - - - M E D I A - - - - - - - - - */
 
-
-  /* - - - - - - - - - M E D I A - - - - - - - - - */
-  
-
-
-@media (max-width:341px) {
+@media (max-width: 341px) {
   nav {
     font-size: 12px;
   }
@@ -618,13 +589,9 @@ footer a:hover {
   .aboutxt {
     width: 100%;
   }
-
 }
 
-
-
 @media (max-width: $breakpoint-xs) {
-  /* Your styles for extra small screens here */
 
   @include mobiles;
   @include about;
@@ -637,11 +604,11 @@ footer a:hover {
     width: 100%;
   }
 
-  .welcometext p, .content1 p {
+  .welcometext p,
+  .content1 p {
     font-size: 10px;
   }
 
-  
   .welcometext h1 {
     padding-bottom: 3px;
     text-align: center;
@@ -654,9 +621,9 @@ footer a:hover {
     font-size: 15px;
   }
 
- .welcometext {
-  margin-bottom: 20px;
- }
+  .welcometext {
+    margin-bottom: 20px;
+  }
 
   .content1 p {
     font-size: 15px;
@@ -677,23 +644,20 @@ footer a:hover {
     flex-wrap: wrap;
   }
 
-  input, textarea {
+  input,
+  textarea {
     width: 50%;
   }
-
 }
 
-
-
-//(576px to 767px)
 @media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm - 1px) {
-  /* Your styles for small screens here */
+  
 
   @include mobiles;
   @include content;
   @include about;
 
-  nav ul li { 
+  nav ul li {
     margin: 0px 20px 10px 20px;
   }
 
@@ -702,11 +666,11 @@ footer a:hover {
     height: 50%;
     margin-bottom: 10px;
   }
-  
+
   .welcometext h1 {
     text-align: center;
   }
-  
+
   header {
     font-size: 18px;
   }
@@ -722,20 +686,19 @@ footer a:hover {
   .content1 img {
     scale: 0.7;
   }
-  
+
   .aboutxt {
     width: 90%;
   }
 
-  input, textarea {
+  input,
+  textarea {
     width: 60%;
   }
-
 }
 
 // (768px to 991px)
 @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - 1px) {
-  
   @include about;
 
   .welcometext h1 {
@@ -748,41 +711,39 @@ footer a:hover {
     font-size: 17px;
   }
 
-    .content1 img {
-      scale: 0.75;
-    }
+  .content1 img {
+    scale: 0.75;
+  }
 
-    header {
-      font-size: 18px;
-    }
+  header {
+    font-size: 18px;
+  }
 
-    .logo {
-      width: 50%;
-      height: 50%;
-    }
+  .logo {
+    width: 50%;
+    height: 50%;
+  }
 
-    .aboutimg {
-      scale: 0.5;
-    }
+  .aboutimg {
+    scale: 0.5;
+  }
 
-    .aboutxt {
-      width: 70%;
-    }
+  .aboutxt {
+    width: 70%;
+  }
 
+  input,
+  textarea {
+    width: 70%;
+  }
 
-    input, textarea {
-      width: 70%;
-    }
-
-    .text-overlay {
-      opacity: 1;
-    }
+  .text-overlay {
+    opacity: 1;
+  }
 }
-
 
 // (992px to 1199px)
 @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg - 1px) {
-  /* Your styles for large screens here */
 
   @include content;
 
@@ -803,25 +764,21 @@ footer a:hover {
     scale: 0.4;
   }
 
-  input, textarea {
+  input,
+  textarea {
     width: 80%;
   }
 }
 
 // (1200px and above)
 @media (min-width: $breakpoint-lg) and (max-width: 1630px) {
-  /* Your styles for extra large screens here */
 
   .welcometext h1 {
     font-size: 40px;
   }
-  
-
 }
 
-
 @media (max-width: 1450px) {
-
   .sectiontitle {
     padding-bottom: 0px;
   }
@@ -837,21 +794,22 @@ footer a:hover {
     width: 100%;
     scale: 0.8;
     border: 1px solid black;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0,0,0,0.4));
-    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url(../assets/images/authorbackground.jpg);
+    background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.4)
+    );
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)),
+      url(../assets/images/authorbackground.jpg);
     background-position: center;
-    
   }
 
   .aboutxt {
-    
   }
-  
+
   #textboxes {
     width: 90%;
   }
 
   @include content;
-
-
 }

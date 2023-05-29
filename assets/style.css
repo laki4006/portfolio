@@ -160,7 +160,8 @@ a {
   margin-bottom: 30px;
 }
 
-.navtop, .navbot {
+.navtop,
+.navbot {
   display: flex;
   justify-content: center;
 }
@@ -306,6 +307,7 @@ a {
 
 #services .textboxes {
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   padding: 0px;
 }
@@ -326,11 +328,6 @@ a {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(0, 102, 34);
-}
-
-#services .textboxes {
-  display: flex;
-  justify-content: center;
 }
 
 #services .aboutxt {
@@ -463,11 +460,20 @@ footer {
 }
 
 footer a {
+  display: flex;
+  justify-content: center;
   transition: 0.3s;
 }
 
 footer a:hover {
   color: rgb(105, 55, 55);
+}
+
+#footerleft,
+#footerright,
+#footercenter {
+  display: flex;
+  flex-direction: column;
 }
 
 /* MIXINS - - - - - - - - - - MIXINS - - - - - - - - - - - - - - MIXINS */
@@ -481,7 +487,6 @@ footer a:hover {
   }
 }
 @media (max-width: 576px) {
-  /* Your styles for extra small screens here */
   .sectiontitle {
     font-size: 30px;
     padding-top: 0px;
@@ -490,7 +495,8 @@ footer a:hover {
     background-color: transparent;
     padding: 0px;
   }
-  .logo, nav {
+  .logo,
+  nav {
     animation-name: none;
   }
   header {
@@ -538,7 +544,8 @@ footer a:hover {
   .welcometext p {
     width: 100%;
   }
-  .welcometext p, .content1 p {
+  .welcometext p,
+  .content1 p {
     font-size: 10px;
   }
   .welcometext h1 {
@@ -569,12 +576,12 @@ footer a:hover {
     display: flex;
     flex-wrap: wrap;
   }
-  input, textarea {
+  input,
+  textarea {
     width: 50%;
   }
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  /* Your styles for small screens here */
   .sectiontitle {
     font-size: 30px;
     padding-top: 0px;
@@ -583,7 +590,8 @@ footer a:hover {
     background-color: transparent;
     padding: 0px;
   }
-  .logo, nav {
+  .logo,
+  nav {
     animation-name: none;
   }
   header {
@@ -659,7 +667,8 @@ footer a:hover {
   .aboutxt {
     width: 90%;
   }
-  input, textarea {
+  input,
+  textarea {
     width: 60%;
   }
 }
@@ -698,7 +707,8 @@ footer a:hover {
   .aboutxt {
     width: 70%;
   }
-  input, textarea {
+  input,
+  textarea {
     width: 70%;
   }
   .text-overlay {
@@ -706,7 +716,6 @@ footer a:hover {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  /* Your styles for large screens here */
   .welcometext {
     margin-bottom: 50px;
     align-self: center;
@@ -728,12 +737,12 @@ footer a:hover {
   .aboutimg {
     scale: 0.4;
   }
-  input, textarea {
+  input,
+  textarea {
     width: 80%;
   }
 }
 @media (min-width: 1200px) and (max-width: 1630px) {
-  /* Your styles for extra large screens here */
   .welcometext h1 {
     font-size: 40px;
   }
